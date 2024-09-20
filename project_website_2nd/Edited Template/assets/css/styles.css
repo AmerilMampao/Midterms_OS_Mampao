@@ -1,0 +1,335 @@
+/* Global Styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1f24; /* Muted dark teal background */
+  color: #dcdcdc; /* Soft light gray text */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #5cc5c3; /* Soft teal accent for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #89f3f0; /* Lighter teal on hover */
+}
+
+/* Navbar Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22272e; /* Slightly darker teal for the navbar */
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #5cc5c3;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  justify-content: center;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.welcome-text {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.welcome-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Tech Stack Icons */
+.tech-stack {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.tech-stack i {
+  margin-right: 10px;
+  color: #5cc5c3; /* Soft teal for icons */
+  transition: color 0.3s;
+}
+
+.tech-stack i:hover {
+  color: #89f3f0; /* Light teal on hover */
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects-section__header {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.05); /* Lighter transparent background */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project img {
+  width: 100%;
+  height: 450px; /* Set the desired height */
+  object-fit: fill; /* This ensures the image fits within the height without stretching */
+  border-bottom: 2px solid #5cc5c3;
+}
+
+.project h3 {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1e252c; /* Dark background */
+}
+
+.contact .heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #5cc5c3; /* Accent color */
+}
+
+.contact .heading span {
+  color: #dcdcdc; /* Lighter text for emphasis */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #2b2b2b; /* Slightly lighter background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Content */
+.content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+}
+
+/* Image Box */
+.image-box {
+  flex: 1; /* Adjust as needed */
+  margin-right: 20px; /* Space between image and form */
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Form */
+form {
+  flex: 2; /* Take more space */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack fields */
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field input,
+.message textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333b42; /* Darker input background */
+  color: #ffffff; /* Input text color */
+  font-size: 16px;
+}
+
+.message textarea {
+  height: 100px; /* Set height for the message box */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+/* Button Area */
+.button-area {
+  text-align: right; /* Align button to the right */
+}
+
+.button-area button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5cc5c3; /* Button background */
+  color: #1a1f24; /* Button text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.button-area button:hover {
+  background-color: #89f3f0; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Section */
+.footer {
+  color: #ededed; /* Light text color */
+  padding: 80px 0; /* Padding around content */
+  font-size: 18px;
+  background-color: #2b2f34; /* Slightly darker footer background */
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer .box {
+  flex: 1;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.footer .box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #5cc5c3; /* Accent color */
+}
+
+.footer .box p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer .box a {
+  display: block;
+  color: #ededed;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .box a:hover {
+  color: #89f3f0; /* Hover color */
+}
+
+.footer .box .share {
+  margin-top: 20px;
+}
+
+.footer .box .share a {
+  display: inline-block;
+  font-size: 24px;
+  color: #ededed;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer .box .share a:hover {
+  color: #5cc5c3; /* Hover color */
+}
+
+/* Scroll-to-top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4e464c;
+  color: rgb(226, 143, 143);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px; /* Adjusted font size for icon */
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  box-shadow: 0 0 10px rgb(243, 119, 237),
+              0 0 20px rgb(243, 119, 237),
+              0 0 30px rgb(243, 119, 237);
+}
+
+/* Footer Disclaimer */
+.footer-disclaimer {
+  text-align: center;
+  padding: 20px 0;
+  color: #d1d1d1; /* Light text color */
+  font-size: 14px; /* Smaller font size */
+  background-color: #2b2b2b; /* Match the footer background */
+}
+html {
+  scroll-behavior: smooth; /* This will enable smooth scrolling for anchor links */
+}
